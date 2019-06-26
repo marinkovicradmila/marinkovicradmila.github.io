@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<rss version="2.0">
+	<channel>
+		<item>
+			<title>Veliko letnje snizenje</title> 
+			<description> Jos -40% popusta na vec snizeno do 31.7.2019. </description> 
+			<link></link> 
+		</item>
+		
+		<item>
+		<title>Kontaktirajte nas</title> 
+		<description>Pogledajte gde se nalazimo i ostavite Vase utiske o Nama</description> 
+		<link></link> 
+		</item>
+	</channel>
+</rss>
