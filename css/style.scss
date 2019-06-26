@@ -1,0 +1,345 @@
+$zlatna:#8E5F39;
+$bela: #ffffff;
+$crna:#000;
+
+@font-face{
+    font-family:"moj";
+    src: url("ReenieBeanie.ttf");
+}
+@mixin bela {
+    background-color: $bela;
+    color:$zlatna !important;
+}
+@mixin zlatna {
+    background-color: $zlatna;
+    color:$bela !important;
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Philosopher', sans-serif;
+    header{
+        nav{
+        box-shadow: none;
+        height:40px;
+        line-height: 40px;
+        z-index: 1;
+        .navbar-nav{
+            .nav-item{
+                padding:0px 10px;
+                .nav-link{
+                    color:$crna !important;
+                    &:hover{
+                        @include bela;
+                    }
+                    &.aktivna{
+                        color:$zlatna !important;
+                    }
+    
+                    i{
+                        font-size: 18px;
+                        padding: 0px;
+                        height: 0px;
+                    }
+                }
+
+            }
+        }
+    }}
+    button{
+        border:none !important;
+        &:focus{
+        background-color: $bela !important;
+        outline: none;
+        box-shadow: none;
+        border:none;
+    }
+        &:hover{
+            background-color:$bela !important;
+        
+        }
+    }
+    .animacija{
+        position: relative;
+        animation: goredole 2s infinite;
+            font-size: 40px;
+    }               
+    @keyframes goredole {
+        0% {
+                  transform: translate(0, 0); }
+        50% {
+                  transform: translate(0,10px); }
+        100% {
+                  transform: translate(0, 0); } 
+    }
+    .card{
+        width:180px;
+    }
+    .kartica{
+        width:220px;
+        &:hover{
+            box-shadow: 1px 10px 25px #ccc;
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+    }
+    .my-4{
+        background-color: $zlatna;
+    }
+    .box {
+        width: 200px; height: 200px;
+        position: relative;
+       
+      }
+    .ribbon {
+        position: absolute;
+        right: -5px; top: -5px;
+        z-index: 1;
+        overflow: hidden;
+        width: 75px; height: 75px;
+        text-align: right;
+        span {
+            @include zlatna;
+            font:{
+                size: 10px;
+                weight: bold;
+            }    
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 20px;
+            letter-spacing: 0.2em;
+            transform: rotate(45deg);
+            width: 100px;
+            display: block;
+            position: absolute;
+            top: 19px; right: -21px;
+            &::before {
+                content: "";
+                position: absolute; left: 0px; top: 100%;
+                z-index: -1;
+                border:{
+                    left: 3px solid $zlatna;
+                    right: 3px solid transparent;
+                    bottom: 3px solid transparent;
+                    top: 3px solid $zlatna;
+                }
+            }
+            &::after {
+                content: "";
+                position: absolute; right: 0px; top: 100%;
+                z-index: -1;
+                border:{
+                    left: 3px solid transparent;
+                    right: 3px solid $zlatna;
+                    bottom: 3px solid transparent;
+                    top: 3px solid $zlatna;
+                }   
+            }
+        }
+    }
+    .ls{
+        letter-spacing: 0.2em;
+        &::after {
+        content: " ";
+        clear: left;
+        display: block;
+        margin: 20px auto 20px auto;
+        border-bottom: 1px solid $zlatna;
+        width: 60px;    
+    }
+    }
+    .btn-floating{
+        background-color: $bela;
+        box-shadow: 0 0 10px 2px rgba(128, 85, 51, 0.3); 
+        &:hover{
+            background-color: $zlatna;
+        }
+        i{
+            color: $zlatna;
+            &:hover{
+                color:$bela;
+            }
+        }
+
+    }
+    .mojfont{
+        font-family: 'moj';
+        font-size: 45px;
+    }
+    .jumbotron{
+        background-color: #fff;
+        box-shadow: 0px 1px 5px 0px $zlatna;
+        &:hover{
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0px 1px 10px 0px $zlatna;
+        }
+        h1{
+        @extend.mojfont;
+        }
+        a{
+            text-decoration: none;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            padding: 5%;
+            &:hover{
+                border: none;
+            }
+        }
+}
+
+        .linija{
+        background-color:$zlatna;
+        width:60px; 
+    }
+.naslov {
+        &::before,
+        &::after {
+          display: inline-block;
+          content: " ";
+          border-top: 1px solid $zlatna;
+          width: 2rem;
+          margin:0% 5%;
+          transform: translateY(-8px);
+        }
+}
+        input:focus, textarea:focus{
+        border-bottom: 1px solid $zlatna !important;
+        box-shadow: none !important;
+        
+    }
+    input:focus+label{
+        color:$zlatna !important;
+    }
+    #slider1 .carousel-item{
+        width:280px;
+    }
+    .btn{
+        color:$zlatna !important;
+    }
+    .nav-pills .show>.nav-link,a{
+        color:$crna;
+        background-color: $bela;
+        &:hover{
+            color:$zlatna;
+        }
+    }
+    form{
+        
+        display: flex;
+        justify-content: space-between;
+        #t{
+            margin:0% !important;
+            padding: 0% !important;
+        
+        }
+        button{
+            background: none;
+            border: none;
+            position: relative;
+            right:10%;
+        }
+    }
+    label{
+        padding-left: 17px;
+
+    }
+    .ili{
+        font-size: 2em;
+        margin-top: -7%;
+    }
+    .zlatna{
+        color:$zlatna !important;
+    }
+    #forma{
+    #email{
+        &::placeholder{
+        font-family: 'moj';
+        font-size: 30px;
+        color: $zlatna;
+    } }}
+    .ikonice{
+        font-size: 25px;
+        @include zlatna;
+        &:hover{
+            color:$bela;
+        }
+    }
+    .footer{
+        background-color: $zlatna;
+        .onama{
+            @include zlatna;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+    }
+    #bc{
+        box-shadow: none;
+        background-color: $bela;
+    .breadcrumb{
+        border: none !important;
+        background-color: rgba(181, 126, 0, 0.09) !important;
+        padding: 0%;
+        padding-left: 2%;
+        font-weight: bold;
+        line-height:44px;
+        .active{
+           color:$zlatna;
+ 
+        }
+        a{
+            background-color: rgba(181, 126, 0, 0) !important;
+        }
+    }}
+    blockquote{
+        border-left: 5px solid $zlatna;
+    }
+    .modal{
+        img{
+            width:100%;
+        }
+    }
+    .bordura{
+        border-top: 1px solid $bela;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    
+}
+@media screen and (max-width: 992px) {
+body{
+    #autor{
+        margin-bottom: 20px;
+    }
+    .mojfont{
+        font-size: 35px;
+    }
+}}
+@media screen and (max-width: 576px) {
+ body{
+    #forma{
+        #email{
+            &::placeholder{
+            font-size: 20px;
+        } }
+    
+    }    
+    .breadcrumb-item {
+        font-size: 16px;
+    }
+    .h5{
+        font-size: 15px;
+    }
+    .lead{
+        font-size: 15px;
+    }
+    i{
+        font-size:20px;
+    }
+    .mojfont{
+        font-size: 30px;
+    }
+}
+}

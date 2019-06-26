@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "moj";
+  src: url("ReenieBeanie.ttf"); }
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Philosopher', sans-serif; }
+  body header nav {
+    box-shadow: none;
+    height: 40px;
+    line-height: 40px;
+    z-index: 1; }
+    body header nav .navbar-nav .nav-item {
+      padding: 0px 10px; }
+      body header nav .navbar-nav .nav-item .nav-link {
+        color: #000 !important; }
+        body header nav .navbar-nav .nav-item .nav-link:hover {
+          background-color: #ffffff;
+          color: #8E5F39 !important; }
+        body header nav .navbar-nav .nav-item .nav-link.aktivna {
+          color: #8E5F39 !important; }
+        body header nav .navbar-nav .nav-item .nav-link i {
+          font-size: 18px;
+          padding: 0px;
+          height: 0px; }
+  body button {
+    border: none !important; }
+    body button:focus {
+      background-color: #ffffff !important;
+      outline: none;
+      box-shadow: none;
+      border: none; }
+    body button:hover {
+      background-color: #ffffff !important; }
+  body .animacija {
+    position: relative;
+    animation: goredole 2s infinite;
+    font-size: 40px; }
+@keyframes goredole {
+  0% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(0, 10px); }
+  100% {
+    transform: translate(0, 0); } }
+  body .card {
+    width: 180px; }
+  body .kartica {
+    width: 220px; }
+    body .kartica:hover {
+      box-shadow: 1px 10px 25px #ccc;
+      transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  body .my-4 {
+    background-color: #8E5F39; }
+  body .box {
+    width: 200px;
+    height: 200px;
+    position: relative; }
+  body .ribbon {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right; }
+    body .ribbon span {
+      background-color: #8E5F39;
+      color: #ffffff !important;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 20px;
+      letter-spacing: 0.2em;
+      transform: rotate(45deg);
+      width: 100px;
+      display: block;
+      position: absolute;
+      top: 19px;
+      right: -21px; }
+      body .ribbon span::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 100%;
+        z-index: -1;
+        border-left: 3px solid #8E5F39;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid #8E5F39; }
+      body .ribbon span::after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        top: 100%;
+        z-index: -1;
+        border-left: 3px solid transparent;
+        border-right: 3px solid #8E5F39;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid #8E5F39; }
+  body .ls {
+    letter-spacing: 0.2em; }
+    body .ls::after {
+      content: " ";
+      clear: left;
+      display: block;
+      margin: 20px auto 20px auto;
+      border-bottom: 1px solid #8E5F39;
+      width: 60px; }
+  body .btn-floating {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 2px rgba(128, 85, 51, 0.3); }
+    body .btn-floating:hover {
+      background-color: #8E5F39; }
+    body .btn-floating i {
+      color: #8E5F39; }
+      body .btn-floating i:hover {
+        color: #ffffff; }
+  body .mojfont, body .jumbotron h1 {
+    font-family: 'moj';
+    font-size: 45px; }
+  body .jumbotron {
+    background-color: #fff;
+    box-shadow: 0px 1px 5px 0px #8E5F39; }
+    body .jumbotron:hover {
+      transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+      box-shadow: 0px 1px 10px 0px #8E5F39; }
+    body .jumbotron a {
+      text-decoration: none;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      padding: 5%; }
+      body .jumbotron a:hover {
+        border: none; }
+  body .linija {
+    background-color: #8E5F39;
+    width: 60px; }
+  body .naslov::before, body .naslov::after {
+    display: inline-block;
+    content: " ";
+    border-top: 1px solid #8E5F39;
+    width: 2rem;
+    margin: 0% 5%;
+    transform: translateY(-8px); }
+  body input:focus, body textarea:focus {
+    border-bottom: 1px solid #8E5F39 !important;
+    box-shadow: none !important; }
+  body input:focus + label {
+    color: #8E5F39 !important; }
+  body #slider1 .carousel-item {
+    width: 280px; }
+  body .btn {
+    color: #8E5F39 !important; }
+  body .nav-pills .show > .nav-link, body a {
+    color: #000;
+    background-color: #ffffff; }
+    body .nav-pills .show > .nav-link:hover, body a:hover {
+      color: #8E5F39; }
+  body form {
+    display: flex;
+    justify-content: space-between; }
+    body form #t {
+      margin: 0% !important;
+      padding: 0% !important; }
+    body form button {
+      background: none;
+      border: none;
+      position: relative;
+      right: 10%; }
+  body label {
+    padding-left: 17px; }
+  body .ili {
+    font-size: 2em;
+    margin-top: -7%; }
+  body .zlatna {
+    color: #8E5F39 !important; }
+  body #forma #email::placeholder {
+    font-family: 'moj';
+    font-size: 30px;
+    color: #8E5F39; }
+  body .ikonice {
+    font-size: 25px;
+    background-color: #8E5F39;
+    color: #ffffff !important; }
+    body .ikonice:hover {
+      color: #ffffff; }
+  body .footer {
+    background-color: #8E5F39; }
+    body .footer .onama {
+      background-color: #8E5F39;
+      color: #ffffff !important;
+      font-size: 1.5em;
+      text-decoration: none; }
+  body #bc {
+    box-shadow: none;
+    background-color: #ffffff; }
+    body #bc .breadcrumb {
+      border: none !important;
+      background-color: rgba(181, 126, 0, 0.09) !important;
+      padding: 0%;
+      padding-left: 2%;
+      font-weight: bold;
+      line-height: 44px; }
+      body #bc .breadcrumb .active {
+        color: #8E5F39; }
+      body #bc .breadcrumb a {
+        background-color: rgba(181, 126, 0, 0) !important; }
+  body blockquote {
+    border-left: 5px solid #8E5F39; }
+  body .modal img {
+    width: 100%; }
+  body .bordura {
+    border-top: 1px solid #ffffff; }
+  body a:hover {
+    text-decoration: none; }
+
+@media screen and (max-width: 992px) {
+  body #autor {
+    margin-bottom: 20px; }
+  body .mojfont, body .jumbotron h1 {
+    font-size: 35px; } }
+@media screen and (max-width: 576px) {
+  body #forma #email::placeholder {
+    font-size: 20px; }
+  body .breadcrumb-item {
+    font-size: 16px; }
+  body .h5 {
+    font-size: 15px; }
+  body .lead {
+    font-size: 15px; }
+  body i {
+    font-size: 20px; }
+  body .mojfont, body .jumbotron h1 {
+    font-size: 30px; } }
+
+/*# sourceMappingURL=style.css.map */
